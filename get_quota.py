@@ -1,4 +1,4 @@
-import sys
+iimport sys
 import requests
 import os
 
@@ -31,13 +31,12 @@ def categorize_objects(objects_data):
     return results
 
 def update_log(results):
-    if os.path.exists(LOG_FILE):
-        with open(LOG_FILE, 'r') as f:
-            existing_results = f.read()
-    else:
-        existing_results = ''
+    if not os.path.exists(LOG_FILE):
+        open(LOG_FILE, 'w').close()  # Create the file if it doesn't exist
 
-    with open(LOG_FILE, 'w') as f:
+    with open(LOG_FILE, 'r+') as f:
+        existing_results = f.read()
+        f.seek(0)  # Move the file pointer to the beginning of the file
         if results['Less than 5']:
             f.write("Less than 5:\n")
             for result in results['Less than 5']:
@@ -48,6 +47,7 @@ def update_log(results):
             f.write(result + '\n')
         f.write('\n')
         f.write(existing_results)
+        f.truncate()  # Truncate any remaining content after writing
 
 def main():
     if len(sys.argv) != 3:
