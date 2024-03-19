@@ -18,3 +18,4 @@ jobs:
       - name: Run Python Script
         run: |
          python get_quota.py "$API_URL" "$API_TOKEN"
+         cat quota_usage.log
