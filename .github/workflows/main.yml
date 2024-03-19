@@ -1,35 +1,21 @@
-# Name of the workflow
-name: Trigger Pipeline on Commit
+name: Trigger Pipeline on Event
 
-# Specifies when the workflow should run
 on:
-  # Triggers the workflow on a push event to the repository
-  push:
-    branches:
-      - main # Specifies the main branch
+  repository_dispatch:
+    types: [trigger-pipeline]
 
-# Specifies the jobs to be executed in the workflow
 jobs:
-  # Job name
   build:
-    # Specifies the type of runner for the job
     runs-on: ubuntu-latest
 
-    # Specifies environment variables for the job
     env:
-      # API URL secret
       API_URL: ${{ secrets.API_URL }}
-      # API token secret
       API_TOKEN: ${{ secrets.API_TOKEN }}
 
-    # Specifies the steps to be executed in the job
     steps:
-      # Step to checkout the repository
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      # Step to run a Python script
       - name: Run Python Script
-        # Command to execute the Python script with API URL and token as arguments
         run: |
-          python get_quota.py "$API_URL" "$API_TOKEN"
+         python qet_quota.py "$API_URL" "$API_TOKEN"
