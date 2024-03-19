@@ -12,7 +12,7 @@ Object Name: voltshare_admin_policy, Limit: 1, Usage: 0, Difference: 1
 
 All:
 Object Name: address_allocator, Limit: 32, Usage: 20, Difference: 12
-Object Name: advertise_policy, Limit: 200, Usage: 114, Difference: 86
+Object Name: advertise_policy, Limit: 200, Usage: 115, Difference: 85
 Object Name: alert, Limit: 60, Usage: 0, Difference: 60
 Object Name: alert_policy, Limit: 50, Usage: 2, Difference: 48
 Object Name: alert_policy_set, Limit: 50, Usage: 1, Difference: 49
@@ -24,9 +24,9 @@ Object Name: api_group, Limit: 200, Usage: 0, Difference: 200
 Object Name: api_group_element, Limit: 0, Usage: 0, Difference: 0
 Object Name: apm, Limit: 10, Usage: 0, Difference: 10
 Object Name: app_api_group, Limit: 200, Usage: 0, Difference: 200
-Object Name: app_firewall, Limit: 100, Usage: 38, Difference: 62
-Object Name: app_setting, Limit: 75, Usage: 21, Difference: 54
-Object Name: app_type, Limit: 75, Usage: 22, Difference: 53
+Object Name: app_firewall, Limit: 100, Usage: 39, Difference: 61
+Object Name: app_setting, Limit: 75, Usage: 22, Difference: 53
+Object Name: app_type, Limit: 75, Usage: 23, Difference: 52
 Object Name: authentication, Limit: 100, Usage: 0, Difference: 100
 Object Name: bgp, Limit: 150, Usage: 13, Difference: 137
 Object Name: bgp_asn_set, Limit: 50, Usage: 0, Difference: 50
@@ -115,7 +115,7 @@ Object Name: rate_limiter_policy, Limit: 50, Usage: 0, Difference: 50
 Object Name: rate_limiter_policy_rules, Limit: 100, Usage: -1, Difference: 101
 Object Name: report_config, Limit: 20, Usage: 0, Difference: 20
 Object Name: role, Limit: 25, Usage: 0, Difference: 25
-Object Name: route, Limit: 500, Usage: 112, Difference: 388
+Object Name: route, Limit: 500, Usage: 113, Difference: 387
 Object Name: secret_management, Limit: 60, Usage: 0, Difference: 60
 Object Name: secret_management_access, Limit: 100, Usage: 0, Difference: 100
 Object Name: secret_policy, Limit: 100, Usage: 4, Difference: 96
@@ -123,9 +123,9 @@ Object Name: secret_policy_rule, Limit: 200, Usage: 0, Difference: 200
 Object Name: secret_policy_set, Limit: 50, Usage: -1, Difference: 51
 Object Name: secrets_per_vk8s, Limit: 25, Usage: -1, Difference: 26
 Object Name: secureshare_admin_policy, Limit: 1, Usage: 0, Difference: 1
-Object Name: service_policy, Limit: 500, Usage: 88, Difference: 412
-Object Name: service_policy_rule, Limit: 1000, Usage: 103, Difference: 897
-Object Name: service_policy_set, Limit: 500, Usage: 43, Difference: 457
+Object Name: service_policy, Limit: 500, Usage: 90, Difference: 410
+Object Name: service_policy_rule, Limit: 1000, Usage: 105, Difference: 895
+Object Name: service_policy_set, Limit: 500, Usage: 44, Difference: 456
 Object Name: serviceaccounts_per_vk8s, Limit: 5, Usage: -1, Difference: 6
 Object Name: services_per_vk8s, Limit: 25, Usage: -1, Difference: 26
 Object Name: shape_safe_analyst_station, Limit: 1, Usage: 0, Difference: 1
@@ -147,12 +147,12 @@ Object Name: tpm_manager, Limit: 20, Usage: 0, Difference: 20
 Object Name: trusted_ca_list, Limit: 300, Usage: 0, Difference: 300
 Object Name: tunnel, Limit: 200, Usage: 20, Difference: 180
 Object Name: usb_policy, Limit: 50, Usage: -1, Difference: 51
-Object Name: user, Limit: 400, Usage: 27, Difference: 373
+Object Name: user, Limit: 400, Usage: 31, Difference: 369
 Object Name: user_group, Limit: 400, Usage: 6, Difference: 394
 Object Name: user_identification, Limit: 100, Usage: 1, Difference: 99
 Object Name: v1_dns_monitor, Limit: 500, Usage: 0, Difference: 500
 Object Name: v1_http_monitor, Limit: 500, Usage: 0, Difference: 500
-Object Name: virtual_host, Limit: 150, Usage: 111, Difference: 39
+Object Name: virtual_host, Limit: 150, Usage: 112, Difference: 38
 Object Name: virtual_k8s, Limit: 50, Usage: 5, Difference: 45
 Object Name: virtual_network, Limit: 200, Usage: 36, Difference: 164
 Object Name: virtual_site, Limit: 100, Usage: 29, Difference: 71
