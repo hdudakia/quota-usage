@@ -1,0 +1,21 @@
+name: Trigger Pipeline on Event
+
+on:
+  repository_dispatch:
+    types: [trigger-pipeline]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      API_URL: ${{ secrets.API_URL }}
+      API_TOKEN: ${{ secrets.API_TOKEN }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Python Script
+        run: |
+         python qet_quota.py "$API_URL" "$API_TOKEN"
