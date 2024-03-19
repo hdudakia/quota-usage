@@ -1,8 +1,7 @@
 name: Trigger Pipeline on Event
 
 on:
-  repository_dispatch:
-    types: [trigger-pipeline]
+  workflow_dispatch:
 
 jobs:
   build:
